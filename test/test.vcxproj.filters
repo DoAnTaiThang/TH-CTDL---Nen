@@ -15,22 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

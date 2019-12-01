@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{133695E7-2488-499F-AF58-CE5CD8822EFC}</ProjectGuid>
-    <RootNamespace>My1812054518120555</RootNamespace>
+    <ProjectGuid>{B343F280-78A0-4BD0-A164-083B55B178AC}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -78,7 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -115,13 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.cpp" />
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\main.cpp" />
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.h" />
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
