@@ -1,27 +1,33 @@
-#ifndef NODE_H
-#define NODE_H
+#pragma once
+#include <memory>
 
-// ---------- INCLUDES ------------------------------------------------------------------
-#include <map>
-#include <vector>
-#include <string>
+#define _CRT_SECURE_NO_WARNINGS
 
-enum NODE_TYPE {LEAF, BIND};
+using std::shared_ptr;// su dung smart poiter: shared poiter
 
-// ---------- NODE CLASS ----------------------------------------------------------------
-class Node {
-private:
-    NODE_TYPE type;
-    int   frequency;
-    char  data;
-    Node* left;
-    Node* right;
+template<typename T>
+class Node
+{
 public:
-    Node(char d, int s, NODE_TYPE t = LEAF);
-    Node(Node* l, Node* r, NODE_TYPE t = BIND);
-    ~Node();
-    int  getFrequency();
-    void fill(std::map<char, std::pair<int, int>>& enc, int bits, int nbits);
+	Node(const T);
+	Node(const T, const int);
+	Node(const int);
+	Node(const int, const shared_ptr<Node>&, const shared_ptr<Node>&);
+
+	int get_count() const;
+	T get_value() const;
+
+	bool has_left() const;
+	bool has_right() const;
+	const shared_ptr<Node<T>>& get_left() const;
+	const shared_ptr<Node<T>>& get_right() const;
+	Node& operator ++ ();
+
+private:
+	shared_ptr<Node<T>> left;
+	shared_ptr<Node<T>> right;
+
+	int count;
+	T value;
 };
 
-#endif

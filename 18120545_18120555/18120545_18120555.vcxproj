@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BinaryHelper.cpp" />
+    <ClCompile Include="HuffmanTree.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="TransformUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryFileHelper.h" />
+    <ClInclude Include="HuffmanTree.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="TransformUtils.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{133695E7-2488-499F-AF58-CE5CD8822EFC}</ProjectGuid>
@@ -114,15 +127,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.cpp" />
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\main.cpp" />
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.h" />
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

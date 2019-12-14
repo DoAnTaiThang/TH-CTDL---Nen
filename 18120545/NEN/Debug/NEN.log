@@ -1,5 +1,0 @@
-﻿  BinaryHelper.cpp
-  main.cpp
-  Generating Code...
-D:\DO_AN_NEN\18120545\NEN\BinaryHelper.cpp(40,51): warning C4244: 'argument': conversion from 'const std::streamsize' to 'const int', possible loss of data
-  NEN.vcxproj -> D:\DO_AN_NEN\18120545\Debug\NEN.exe

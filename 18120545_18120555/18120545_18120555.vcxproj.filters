@@ -15,21 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryHelper.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HuffmanTree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformUtils.cpp">
+      <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Huffman.h">
+    <ClInclude Include="BinaryFileHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Cấu trúc dữ liệu\doan2_nen\Huffman-master\Node.h">
+    <ClInclude Include="HuffmanTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

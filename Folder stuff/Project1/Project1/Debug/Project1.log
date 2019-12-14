@@ -1,4 +1,0 @@
-﻿  main.cpp
-D:\BT Huffman\Folder stuff\Project1\Project1\main.cpp(31,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-D:\BT Huffman\Folder stuff\Project1\Project1\main.cpp(49,21): warning C4018: '<': signed/unsigned mismatch
-  Project1.vcxproj -> D:\BT Huffman\Folder stuff\Project1\Debug\Project1.exe

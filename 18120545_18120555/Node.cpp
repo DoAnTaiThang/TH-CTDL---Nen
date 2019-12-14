@@ -1,46 +1,68 @@
-#include <iostream>
 #include "Node.h"
 
-// ---------- NODE (LEAF) CONSTRUCTOR ---------------------------------------------------
-Node::Node(char d, int s, NODE_TYPE t) {
-    type = t;
-    data = d;
-    frequency = s;
-    left = right = NULL;
+//#define _CRT_SECURE_NO_WARNINGS
+
+template<typename T>
+Node<T>::Node(const int count)
+	: left(nullptr), right(nullptr), count(count)
+{}
+
+template<typename T>
+Node<T>::Node(const T value)
+	: left(nullptr), right(nullptr), count(1), value(value)
+{}
+
+template<typename T>
+Node<T>::Node(const T value, const int count)
+	: left(nullptr), right(nullptr), count(count), value(value)
+{}
+
+template<typename T>
+Node<T>::Node(const int count, const shared_ptr<Node>& left, const shared_ptr<Node>& right)
+	: left(left), right(right), count(count)
+{}
+
+template<typename T>
+int Node<T>::get_count() const
+{
+	return count;
 }
 
-// ---------- NODE (BIND) CONSTRUCTOR ---------------------------------------------------
-Node::Node(Node* l, Node* r, NODE_TYPE t) {
-    type = t;
-    data = 0;
-    frequency = l->getFrequency() + r->getFrequency();
-    left = l;
-    right = r;
+template<typename T>
+T Node<T>::get_value() const
+{
+	return value;
 }
 
-// ---------- NODE DECONSTRUCTOR --------------------------------------------------------
-Node::~Node() {
-    delete left;
-    delete right;
+template<typename T>
+bool Node<T>::has_left() const
+{
+	return left != nullptr;
 }
 
-// ---------- GET NODE FREQUENCY --------------------------------------------------------
-int Node::getFrequency() {
-    return frequency;
+template<typename T>
+bool Node<T>::has_right() const
+{
+	return right != nullptr;
 }
 
-// ---------- FILL NODE WITH DATA -------------------------------------------------------
-void Node::fill(std::map<char, std::pair<int, int>>& enc, int bits, int nbits) {
-    if (type == LEAF) {
-        enc[data] = std::pair<int, int>(bits, nbits);
-    }
-    else if (type == BIND) {
-        nbits += 1;
-        bits <<= 1;
-        left->fill(enc, bits, nbits);
-        bits += 1;
-        right->fill(enc, bits, nbits);
-        bits >>= 1;
-        nbits--;
-    }
+template<typename T>
+const shared_ptr<Node<T>>& Node<T>::get_left() const
+{
+	return left;
 }
+
+template<typename T>
+const shared_ptr<Node<T>>& Node<T>::get_right() const
+{
+	return right;
+}
+
+template<typename T>
+Node<T>& Node<T>::operator ++()
+{
+	++count;
+	return *this;
+}
+
+template class Node<char>;
