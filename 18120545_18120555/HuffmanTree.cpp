@@ -96,7 +96,7 @@ string HuffmanTree::encode(const string& data) const
 		encoded_stream << hash_table.at(c);
 
 	auto result_str = encoded_stream.str();
-	for (auto i = 0; i < 8 - result_str.size() % byte_size; i++)
+	for (auto i = 0; i < result_str.size() % byte_size; i++)
 		result_str += "0";// sau khi ma hoa neu tong so bit ko chia het cho 8 thi them 0 vao den khi nao chia het
 
 	return result_str;
